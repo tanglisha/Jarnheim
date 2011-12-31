@@ -1,0 +1,16 @@
+**Alpha Create a user**
+New user receives an email/msg invite from us.
+User clicks the link and is presented with new user page.
+User chooses a character name and clicks a button to make sure it doesn't already exist.
+User chooses metric/imperial default option.
+User selects a gender.
+User enters their email address.
+User clicks save/submit button to create their account.
+
+**User chooses a guild**
+User receives an invitation from a guild to join.
+User visits guild page to see what the guild is about.
+User clicks "Join Guild" button.
+User is directed back to the guild page with a welcome message and member only view.
+
+**User enters a workout**
