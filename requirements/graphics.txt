@@ -1,0 +1,18 @@
+Levels
+
+Let's say that we start with a limit of level 10.
+This would mean we need 10 pieces of avitar art for male and 10 for female.
+
+0 Avitar is a scrawny guy/girl in a loincloth or similar, a little hunched over.
+1 Avitar gains becomes tone.
+2 Avitar gains leather armor and boots.
+3 Avitar gains more muscle.
+4 Avitar gains a helmet.
+5 Avitar stands up straight.
+6 Avitar gains a sword.
+7 Avitar gains more muscle.
+8 Avitar gains a shield.
+9 Avitar gains hero stance (like He-Man).
+10 Avitar gains a cape.
+
+We could do something similar for guild levels, maybe with a Viking ship that ends up with fancy shields, a masthead, and sails.
