@@ -1,0 +1,20 @@
+**Lifts**
+Base point value of 100 for 1 rep of 1rm. (Initial time doing this lift means the heaviest lift is the 1rm, the rest will be computed based on that.)
+Other lower lifts get point value based on percentage, up to 10 reps.  After 10 reps, they get 50% of that point value per rep for another 10 reps, etc.
+Maybe 150 points for a new 1rm?
+Possibly some kind of level up value for breaking into a different level based on strstd standards?
+
+**Cardio**
+I have no idea how to handle this fairly.  New people shouldn't be penalized for running only a mile, but a marathon should obviously be worth more.  Maybe get some cardio people's input on how to handle this fairly.
+
+**HIIT**
+I feel like this needs it's own category.  Going by distance and speed doesn't make sense for hill sprints and such.  Under this category: Prowler push, hill sprint, bike HIIT.
+
+Again, 100 point baseline for time/distance.  Break either of these to get the 50pt 1rm+ type calculation for the session.
+
+**Bodyweight Work**
+This would include yoga and gymnastics.
+
+Yoga works through a progression, so maybe we could handle this like a complex?  A specific hold wouldn't be timed, but you could look at how many times you did a set of positions in a yoga workout.  We could use a yoga expert for hold names - some people use the English name and some the ... Sandskrit? ... name.  100pts for a complex, bonus for spending longer on it?  Maybe something could be figured out for progression of hold difficulty (crow stand vs hand stand).
+
+Gymnastics is a little more straightforward - holds for time are easier to figure out.  100pts for doing a hold for the 1rm time, 50pt bonus for going up by ... say ... 30 seconds?
