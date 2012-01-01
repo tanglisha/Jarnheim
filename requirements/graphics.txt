@@ -16,3 +16,5 @@ This would mean we need 10 pieces of avitar art for male and 10 for female.
 10 Avatar gains a cape.
 
 We could do something similar for guild levels, maybe with a Viking ship that ends up with fancy shields, a masthead, and sails.
+
+We could also have participation badges for people that aren't necessarily progressing very much.  Maybe a crow for someone that goes out and does a lot of different things, a bag of goald for someone that participates every few days even if they don't gain many points, etc.
