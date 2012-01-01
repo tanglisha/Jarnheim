@@ -75,14 +75,60 @@ def compute1rm(set, old1rm=0):
     thisMax = .01 * set.weight * maxComputeMethod[reps]
         
     if thisMax > newMax:
-        newMax = thisMax
+        return thisMax
             
     if newMax > 0:
         return newMax
     else:
         return set.weight
 
+def getSetRepValues(reps, points):
+    """Return rep values for this set.
+
+    Recursive, point values decrease by half for every 10 reps.
+
+    >>> getSetRepValues(1, 10)
+    10
+
+    >>> getSetRepValues(10, 10)
+    100
+
+    >>> getSetRepValues(20, 10)
+    150
+
+    >>> getSetRepValues(30, 10)
+    170
+    
+    """
+    
+    if reps > 10:
+        return points * 10 + getSetRepValues(reps-10, points/2)
+    else:
+        return points * reps
+
+def calculateSetPoints(set, old1rm=0):
+    """Calculate the points for this set.
+    """
+    pointsEarned = 0
+    base1rmPoints = 100
+    new1rm = compute1rm(set, old1rm)
+
+    #New 1rm deserves extra points!
+    if(new1rm > old1rm):
+        pointsEarned += base1rmPoints/2
+
+    percentage1rm = set.weight / new1rm
+
+    reps = set.reps
+
+    #First 10 reps get full point value
+    #Next 10 reps get 50% of that rep value
+    pointsEarned += getSetRepValues(reps, (percentage1rm * 100))
+
+    return pointsEarned
+
 class _Set(object):
+    exercise = 0
     reps = 0
     weight = 0
 
