@@ -5,6 +5,44 @@ class Set(object):
     reps = 0
     weight = 100
 
+class TestCalculateSetPoints(unittest.TestCase):
+
+    def setup(self):
+        self.set = Set()
+        self.set.reps = 0
+        self.set.weight = 100
+
+    def test0reps(self):
+        """0 reps should earn 0 points"""
+        self.set.reps = 0
+        points = calculateSetPoints(set, 45)
+        self.assert(points, 0, "0 points should have been earned")
+
+    def test1reps(self):
+        """1 rep should earn the full amount"""
+        self.set.reps = 1
+        points = calculateSetPoints(set, 10)
+        self.assert(points, 10, "10 points should have been earned")
+
+    def test10reps(self):
+        """10 reps should earn 10xpoints points"""
+        self.set.reps = 10
+        points = calculateSetPoints(set, 10)
+        self.assert(points, 100, "100 points should have been earned")
+
+    def test20reps(self):
+        """20 reps should earn 10xpoints + 10xpoints/2 points"""
+        self.set.reps = 20
+        points = calculateSetPoints(set, 10)
+        self.assert(points, 150, "150 points should have been earned")
+
+    def test30reps(self):
+        """30 reps should earn 20 reps points + 10xpoints/2/2
+        points"""
+        self.set.reps = 30
+        points = calculateSetPoints(set, 10)
+        self.assert(points, 170, "170 points should have been earned")
+
 class TestCompute1rm(unittest.TestCase):
 
     def setUp(self):
