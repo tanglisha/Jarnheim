@@ -13,4 +13,49 @@ User visits guild page to see what the guild is about.
 User clicks "Join Guild" button.
 User is directed back to the guild page with a welcome message and member only view.
 
-**User enters a workout**
+**User chooses a guild**
+User browses the list of guilds.
+User finds a guild they want to join.  (Are some guilds invite only?)
+User clicks "Join Guild" button.
+User is directed back to the guild page with a welcome message and member only view.
+
+**User enters a workout sequence**
+User clicks the "Workout sequence" button.
+User selects 5/3/1 BBB.
+If user has already done the required exercises, 1rm's are automatically calculated.  They are otherwise blank.
+User has the ability to adjust 1rm numbers.
+User has the ability to change assistive work.
+User clicks the "Save" button.
+User is presented with confirmation that the sequence was saved.
+
+**User enters a custom workout sequence**
+User clicks the "Workout sequence" button.
+User selects "Custom".
+User gives the sequence a name.
+User enters excercises and goal weights/sets/reps if desired.
+User can create new workouts in the sequence by clicking the "New Workout" button.
+User clicks the "Save" button.
+User is presented with confirmation that the sequence was saved.
+
+**User enters a workout (5/3/1 was set up as a sequence)**
+User clicks the "Track" tab/button/link.
+The next appropriate 5/3/1 workout is displayed with appropriate weights and reps.
+User adjusts weights and reps as needed.
+User has the ability to add or delete assistive work and sets of main work.
+User clicks the "Save" button.
+User is presented with the visual of their workout along with point information.
+
+**Guild creates a workout sequence**
+Guild admin clicks "Create a workout sequence" from within the guild admin page.
+Guild admin gives the workout sequence a name.
+Guild admin enters exercises, target sets and reps, and target 1rm percentages or actual weights (not recommended because of gender differences).
+Guild admin can create different workouts in the sequence by clicking the "New Workout" button.
+Guild admin clicks "Save".
+Guild admin is presented with save confirmation, along with a visual of what kind of point percentages will be given for that workout sequence.
+Workout sequence now appears in the available list for all users in the guild.
+
+**User enters a stand-alone workout**
+User clicks the "Track" button/link/tab.
+User selects exercises and enters sets/reps/assisted/weighted/weight/time information.
+User clicks the "Save" button.
+User is presented with save confirmation and a graphic representing points/percentages and such earned in this workout.
