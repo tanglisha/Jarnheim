@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block name %}
+  {% if not user.is_authenticated %}
+    {% trans "Create a Character" %}
+  {% else %}
+    {{ character.name }}
+  {% endif %}
+{% endblock %}
+
+{% block breadcrumbs %} &gt;
+  <a href="/character">{% trans "All Characters" %}</a>
+{% endblock %}
+
+{% block content %}
+  {% if not user.is_authenticated %}
+    <form action="." method="post">
+      <div id="character_name">
+	{% if form.name.errors %}
+          {{ form.name.html_error_list }}
+        {% endif %}
+	<label for="name">{% trans "Character Name" %}</label>
+	{{ form.name }}
+      </div>
+      <div id="birthday">
+	{% if form.birthday.errors %}
+	  {{ form.birthday.html_error_list }}
+	{% endif %}
+	<label for="birthday">{% trans "Date of Birth" %}</label>
+	{{ form.birthday }}
+      </div>
+      <div id="gender">
+	{% if form.gender.errors %}
+	  {{ form.gender.html_error_list }}
+	{% endif %}
+	<label for="gender">{% trans "Gender" %}</label>
+	{{ form.gender }}
+      </div>
+      <div id="bodyweight">
+	{% if form.bodyweight.errors %}
+	  {{ form.bodyweight.html_error_list }}
+	{% endif %}
+	<label for="bodyweight">{% trans "Bodyweight" %}</label>
+	{{ form.bodyweight }}
+      </div>
+      <div id="bodyweight_uom">
+	{% if form.bodyweight_uom.errors %}
+	  {{ form.bodyweight_uom.html_error_list }}
+	{% endif %}
+	<label for="bodyweight_uom">{% trans "Bodyweight Unit of Measure" %}</label>
+	{{ form.bodyweight_uom }}
+      </div>
+      <div id="height">
+	{% if form.height.errors %}
+	  {{ form.height.html_error_list }}
+	{% endif %}
+	<label for="height">{% trans "Height" %}</label>
+	{{ form.height }}
+      </div>
+      <div id="height_uom">
+	{% if form.height_uom.errors %}
+	  {{ form.height_uom.html_error_list }}
+	{% endif %}
+	<label for="height_uom">{% trans "Height Unit of Measure" %}</label>
+	{{ form.height_uom }}
+      </div>
+      <div id="weight_uom">
+	{% if form.weight_uom.errors %}
+	  {{ form.weight_uom.html_error_list }}
+	{% endif %}
+	<label for="weight_uom">{% trans "Unit of Measure for Weights Lifted" %}</label>
+	{{ form.weight_uom }}
+      </div>
+    </form>
+  {% else %}
+  {% endif %}
+{% endblock %}

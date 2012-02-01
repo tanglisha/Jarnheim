@@ -21,4 +21,6 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
 
     url(r'^bans/', include('bans.urls', namespace="bans")),
+    url(r'^character/', include('characters.urls',
+                                namespace="characters")),
     )

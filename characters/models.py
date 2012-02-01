@@ -20,7 +20,11 @@ class Character( models.Model ):
                                       blank=False,
                                       unique=False,
                                       default=datetime.today())
-
+    update_dtm = models.DateTimeField(verbose_name="Date updated",
+                                      db_index=False,
+                                      blank=False,
+                                      unique=False,
+                                      default=datetime.today())
     #  character specific fields
     name = models.CharField( max_length = 30,
                              verbose_name = "User Name",

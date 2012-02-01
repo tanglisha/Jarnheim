@@ -1,0 +1,5 @@
+[report]
+# Leave Django files out of this
+omit =
+     ^django.*
+     xml.dom.pulldown

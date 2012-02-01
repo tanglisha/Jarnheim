@@ -132,7 +132,7 @@ TEMPLATE_DIRS = (
 )
 
 # Use my user model, rather than the default
-AUTH_PROFILE_MODEL='jar_user.Profile'
+AUTH_PROFILE_MODEL='characters.Character'
 
 # Add new apps here, this will make test coverage checks easier
 JARNHEIM_APPS = (
