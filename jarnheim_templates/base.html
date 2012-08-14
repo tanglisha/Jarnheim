@@ -6,14 +6,22 @@
     <title>Jarnheim</title>
   </head>
   <body>
-    <h1>{% block name %}{% endblock %}</h1>
+    <header>
+      <h1>{% block name %}{% endblock %}</h1>
 
-    <span id="breadcrumbs">
+      <nav>
+        <ul>
+	  {% include "navigation.html" %}
+	</ul>
+      </nav>
+
+      <span id="breadcrumbs">
         <a href="/">{% trans "Home" %}</a>
 
         {% block breadcrumbs %}
         {% endblock %}
-   </span>
+     </span>
+   </header>
 
     {% block content %}
 
